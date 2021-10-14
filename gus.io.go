@@ -27,7 +27,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	w.Write([]byte("{\n"))
 	w.Write([]byte("    \"api.gus.io\" : {\n"))
-	w.Write([]byte("        \"time\" : \""))
+	w.Write([]byte("        \"now_utc\" : \""))
 	w.Write([]byte(thetimenow()))
 	w.Write([]byte("\",\n"))
 	w.Write([]byte("        \"Your_IP\" : \""))
