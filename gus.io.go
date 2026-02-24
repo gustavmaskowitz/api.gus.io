@@ -33,7 +33,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("        \"Your_IP\" : \""))
 	w.Write([]byte(host))
 	w.Write([]byte("\",\n"))
-	w.Write([]byte("        \"built with\" : \"golang net/http\"\n"))
+	w.Write([]byte("        \"built with\" : \"golang net/http\",\n"))
 	w.Write([]byte("        \"more info\" : \"http://www.gus.io/\"\n"))
 	w.Write([]byte("    }\n"))
 	w.Write([]byte("}\n"))
